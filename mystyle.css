@@ -1,0 +1,83 @@
+/* Change color of Links */
+a:visited {
+	color: #551A8B !important;
+	text-decoration: underline !important;
+}
+a {
+    text-decoration: underline !important;
+}
+a:hover {
+	color: #95aed5;
+}
+a:active  {
+	color: #4f78b9;
+	text-decoration: underline !important;
+}
+
+/* Alternate shading of tables */
+TR.SectionHeader {
+    background: #E5E5E5 !important; 
+}
+table.ListView tr.Calendar, table.ListView tr.DataDark {
+    background: #F2F2F2 !important;
+}
+TABLE.ListView TR.Selected {
+    background: #D9D9D9 !important;
+}
+TABLE.ListView TR.Selected td {
+    background: #D9D9D9 !important;
+}
+
+TABLE.data-grid-table TR.Selected td {
+    background: #D9D9D9 !important;
+}
+
+table.data-grid-table tr:nth-child(odd) td{
+    background:#F2F2F2 !important;
+}
+
+/* Hide block in the search fields */
+#BodyLeftMenu {
+    border-right-width: 0px !important;
+}
+
+
+/* Hide Item Search */
+#QS4.search08 { 
+    display: 0px solid !important;
+}
+
+
+td[onfocus="if(SysGetElement('QS4') != null) {SysGetElement('QS4').focus();}"] {
+    display: none !important;
+}
+
+
+/* Hide People Search */
+#QS1.search08 { 
+    display: none !important;
+}
+
+td[onfocus="if(SysGetElement('QS1') != null) {SysGetElement('QS1').focus();}"] {
+    display: none !important;
+}
+
+/* Highlight subscription - Checkbox element, when checked */
+#ff_UserYesNo_02:checked {
+  box-shadow: 0 0 0 5px green;
+}
+
+/* Make Text Area Bigger so we can see more lines */
+textarea.slds-textarea {
+  height: 220px !important;
+}
+
+/* Make SalesForce Email Area Bigger in cases so we can see more lines */
+#cke_1_contents {
+   height: 950px !important;
+}
+
+/* Remove hover popups in SalesForce for Accounts and etc. */
+.uiPanel--default.uiPanel.forceHoverPanel.positioned.east.open.active {
+    display: none !important;
+}
